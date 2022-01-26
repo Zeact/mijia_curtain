@@ -6,7 +6,7 @@ from homeassistant.components.cover import (
     SUPPORT_STOP,
     SUPPORT_SET_POSITION,
     CoverEntity,
-    DEVICE_CLASS_CURTAIN,
+    DEVICE_CLASS_AWNING,
 )
 from homeassistant.const import (
     CONF_NAME,
@@ -281,7 +281,7 @@ class MijiaCurtain(CoverEntity):
 
     @property
     def device_class(self) -> Optional[str]:
-        return DEVICE_CLASS_CURTAIN
+        return DEVICE_CLASS_AWNING
 
     @property
     def state(self):
